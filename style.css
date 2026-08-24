@@ -24,6 +24,9 @@ body {
     background-color: var(--light);
     color: var(--dark);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que a página ocupe no mínimo 100% da altura da tela */
 }
 
 a {
@@ -249,6 +252,7 @@ nav ul li a:hover::after, nav ul li a.active::after {
 /* Seção Produtos */
 .section-page {
     padding: 140px 8% 100px;
+    flex: 1; /* Faz esta área expandir e empurrar o footer sempre para o final */
 }
 
 #produtos {
